@@ -1,4 +1,6 @@
-import React from "react";
+import React, { Component, useContext, useEffect } from "react";
+import { CluesContext } from "../Main";
+const axios = require('axios');
 
 /*
    AANWIJZINGEN
@@ -6,12 +8,19 @@ import React from "react";
    Lijst hier de kamers, wapens en verdachten op.
 */
 
+
 const Clues = () => {
-  return (
+
+  const clues = useContext(CluesContext)
+  console.log(clues);
+  console.log(clues)
+
+
+  return ( 
     <div className="full file">
       <h2>Aanwijzingen</h2>
-      <div>Lijst hier de kamers, wapens en verdachten op.</div>
-      <div>Dit is een test xx</div>
+      <div></div>
+      <div></div>
       <div>tweede test</div>
     </div>
   );
