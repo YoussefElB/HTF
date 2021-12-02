@@ -12,12 +12,7 @@ const axios = require('axios');
 
 
 const Clues = () => {
-
   var clues = useContext(CluesContext)
-  console.log(clues);
-
-
-
   return ( 
     <div className="full file">
       <h2>Aanwijzingen</h2>
